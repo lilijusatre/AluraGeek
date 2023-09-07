@@ -2,11 +2,16 @@
     background-color: var(--azul10);
     padding-bottom: 62px;
 }
-.contacto > div {
+.contacto-navegacion {
     height: 190px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.contacto-enlaces {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
 }
 .contacto__logo{
     width: 176px;
@@ -25,17 +30,20 @@
 .enlaces{
     list-style: none;
 }
-.formulario__contacto, .user__name, .textarea {
+.formulario__contacto{
     display: flex;
     flex-direction: column;
-    width: 560px;
     justify-content: space-between;
     align-items: flex-start;
     font-family: var(--raleway);
+    width: 48%;
 }
 .formulario__contacto > p {
     font-weight: 600;
     font-size: 14px;
+}
+.user__name {
+    width: 100%;
 }
 .user__name > input{
     border: none;
@@ -55,6 +63,9 @@
     margin-left: 10px;
     margin-top: 3px;
 }
+.textarea{
+    width: 100%;
+}
 .textarea > textarea{
     border: none;
     border-bottom: 1px solid lightgray;
@@ -62,8 +73,59 @@
     width: 100%;
     height: 60px;
     padding: 10px 0px 0px 10px;
+    resize: none;
 }
 textarea::placeholder{
     color: var(--preto50);
     font-family: var(--raleway);
 }
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .contacto{
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    .contacto-enlaces {
+        flex-direction: column;
+        height: 240px;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 361px) {
+    .contacto-enlaces{
+    flex-direction: column;
+    height: 240px;
+    gap: 12px;
+    }
+    .contacto {
+        padding-top: 30px;
+    }
+    .formulario__contacto{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 375px){
+    .contacto{
+        padding-top: 20px;
+        height: 500px;
+        padding-bottom: 15px;
+    }
+    .contacto-navegacion{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    }
+    .contacto-enlaces{
+        width: 100%;
+        align-items: center;
+    }
+    .formulario__contacto {
+        width: 100%;
+        gap: 10px;
+    }
+    .boton{
+        padding: 10px;
+    }
+}
+

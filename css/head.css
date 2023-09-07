@@ -1,15 +1,10 @@
 .head {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 115px;
     padding: 0 152px;
-
-}
-.head>div{
-    width: 60%;
-    display: flex;
-    gap: 2rem;
+    justify-content: flex-start;
+     gap: 20px;
 }
 .head__buscador {
     display: flex;
@@ -17,7 +12,7 @@
     padding: 0.5em 0.8em;
     border-radius: 1rem;
     background-color: var(--ligthgray);
-    width: 100%;
+    width: 45%;
     
 }
 .head__buscador__input::placeholder{
@@ -28,7 +23,60 @@
 .head__buscador__input{
     border: none;
     background-color: transparent;
-    width: 90%;
+    width: 60%;
 }
-
-
+.login{
+    margin-left: 300px;
+}
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .head__buscador{
+        width: 60%;
+    }
+   
+}
+@media screen and (max-width: 768px) and (min-width: 361px){
+    .head {
+        padding: 30px;
+        width: 100%;
+        justify-content: flex-start;
+        height: 100px;
+    }
+    .head__logo {
+        width: 130px;
+    }
+    .head__buscador{
+        padding: 0.75em 0.8em;
+        width: 270px;
+    }
+    .login{
+        padding: 0.75rem 3.5rem;
+        margin-left: 120px;
+    }
+}
+@media screen and (max-width: 375px){
+    .head {
+        padding: 10px;
+        width: 100%;
+        height: 90px;
+    }
+    .head__buscador{
+        order: 3;
+        width: 15%;
+        background-color: transparent;
+    }
+    .head__buscador__input{
+        display: none;
+    }
+    .head__logo {
+        width: 100px;
+    }
+    #mi-svg path{
+        fill: black;
+    }
+    .login{
+        padding: 0.75rem 3rem;
+    }
+    .promo{
+        padding-top: 80px;
+    }
+}

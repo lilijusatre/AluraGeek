@@ -1,5 +1,5 @@
 .promo{
-    background: url("../../img/super-mushroom.png") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 0.8)), url("../../img/super-mushroom.png") no-repeat center;
     background-size: cover;
     color: white;
     font-family: var(--raleway);
@@ -16,4 +16,22 @@
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 377px) {
+    .promo{
+        display: flex;
+        justify-content: flex-end;
+        height: 352px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .promo__titulo{
+        font-size: 1em;
+    }
+    .promo__texto{
+        font-size: 14px;
+        font-weight: 100;
+    }
+    
 }
