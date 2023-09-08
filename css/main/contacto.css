@@ -41,6 +41,7 @@
 .formulario__contacto > p {
     font-weight: 600;
     font-size: 14px;
+    color: var(--preto100);
 }
 .user__name {
     width: 100%;
@@ -91,24 +92,23 @@ textarea::placeholder{
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 361px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
     .contacto-enlaces{
     flex-direction: column;
     height: 240px;
     gap: 12px;
     }
     .contacto {
-        padding-top: 30px;
+        padding: 30px 30px 60px 30px;
     }
     .formulario__contacto{
         width: 60%;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 425px){
     .contacto{
-        padding-top: 20px;
+        padding: 20px 10px 15px 10px;
         height: 500px;
-        padding-bottom: 15px;
     }
     .contacto-navegacion{
         flex-direction: column;
@@ -119,6 +119,8 @@ textarea::placeholder{
     .contacto-enlaces{
         width: 100%;
         align-items: center;
+        flex-direction: column;
+        height: 55%;
     }
     .formulario__contacto {
         width: 100%;

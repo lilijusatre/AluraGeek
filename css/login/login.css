@@ -1,0 +1,66 @@
+body{
+}
+.login{
+    background-color: var(--preto05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+    margin: 0;
+}
+.login__form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+    font-family: var(--raleway);
+}
+.login__form > p {
+    font-weight: 600;
+    color: var(--preto100);
+    font-size: 18px;
+}
+.login__form > input {
+    border: none;
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+#iniciar__correo::placeholder, #iniciar__contraseña::placeholder  {
+    color: var(--preto50);
+    font-size: 16px;
+    font-weight: 100;
+}
+.boton__login{
+    width: 100%;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    .boton__login{
+        width: 50%;
+    }
+    .login__form{
+        width: 80%;
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 425px){
+    .login{
+        padding: 0.75rem 1rem;
+        width: 100%;
+    }
+    #iniciar__correo::placeholder, #iniciar__contraseña::placeholder  {
+        font-size: 14px;
+    }
+    .login__form{
+        width: 80%;
+    }
+    .login__form > input {
+        height: 40px;
+    }
+}
