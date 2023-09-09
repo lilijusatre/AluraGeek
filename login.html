@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="head">
-        <img class="head__logo" src="img/Logo.svg" alt="Logo de Alura Geek">
+        <a href="/index.html"> <img class="head__logo" src="img/Logo.svg" alt="Logo de Alura Geek"> </a>
         <div class="head__buscador" >
             <input class="head__buscador__input" type="search" placeholder="¿Qué deseas buscar?">
             <!-- <img src="img/icons/search.svg" alt="Icono de busqueda"> -->
@@ -22,17 +22,19 @@
         </div>
     </header>
     <section class="login">
-        <form action="post" class="login__form">
+        <form action="post" class="login__form" data-form>
             <p>Iniciar Sesión</p>
-            <input type="email" name="correo" id="iniciar__correo" placeholder="Escriba su correo electrónico">
-            <input type="password" name="contraseña" id="iniciar__contraseña" placeholder="Escriba su contraseña">
+            <input type="email" name="correo" id="iniciar__correo" placeholder="Escriba su correo electrónico" required
+            data-email>
+            <input type="password" name="contraseña" id="iniciar__contraseña" placeholder="Escriba su contraseña" required
+            data-password>
             <button class="boton boton__login" type="submit">Entrar</button>
         </form>
     </section>
     <section class="contacto container">
         <div class="contacto-navegacion">
             <div class="contacto-enlaces">
-                <img class="contacto__logo" src="img/Logo.svg" alt="Logo de Alura Geek">
+                <a href="/index.html"> <img class="contacto__logo" src="img/Logo.svg" alt="Logo de Alura Geek"> </a>
                 <ul class="navegacion">
                     <li class="enlaces">Quienes Somos</li>
                     <li class="enlaces">Política de privacidad</li>
@@ -60,5 +62,6 @@
         <p>Desarrollado por Lilia Salazar</p>
         <p>2023</p>
     </footer>
+    <script type="module" src="../controllers/registro.controller.js"></script>
 </body>
 </html>

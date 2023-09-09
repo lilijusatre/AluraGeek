@@ -18,11 +18,14 @@ main{
 }
 .button{
     border: 1px solid var(--blue);
-    font-family: var(--raleway);
     background-color: transparent;
-    color: var(--blue);
     padding: 0.5rem 2.5rem;
+}
+.button > a {
+    font-family: var(--raleway);
     font-weight: 400;
+    color: var(--blue);
+    text-decoration: none;
 }
 .boton{
     background-color: var(--blue);

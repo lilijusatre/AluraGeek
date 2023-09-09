@@ -66,6 +66,7 @@
     .head__buscador{
         width: 15%;
         background-color: transparent;
+        order: 3;
     }
     .head__buscador__input{
         display: none;

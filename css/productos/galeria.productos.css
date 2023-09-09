@@ -13,8 +13,9 @@
     font-size: 32px;
     color: var(--preto100);
 }
-.galeria__titulo > p {
+.galeria__titulo > p > a {
     color: var(--blue);
+    text-decoration: none;
 }
 .galeria__productos{
     display: flex;
