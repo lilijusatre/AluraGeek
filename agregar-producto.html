@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/bases.css" rel="stylesheet"/>
+    <link href="css/head.css" rel="stylesheet"/>
+    <link href="css/main/contacto.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/productos/agregar.productos.css" />
+</head>
+<body>
+    <header class="head">
+        
+        <img class="head__logo" src="img/Logo.svg" alt="Logo de Alura Geek">
+        <div class="head__buscador" >
+            <input class="head__buscador__input" type="search" placeholder="¿Qué deseas buscar?">
+            <!-- <img src="img/icons/search.svg" alt="Icono de busqueda"> -->
+            <svg id="mi-svg" class="head__buscador__icono" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z" fill="#A2A2A2"/>
+            </svg>
+        </div>
+        
+        <button class="button menu">Menú Administrador</button>
+    </header>
+    <main>
+        <section class="nuevo-producto container">
+            <form action="post" class="producto__form">
+                <p>Agregar nuevo producto</p>
+                <div class="producto-input">
+                    <label for="producto-imagen">URL de la imagen</label>
+                    <input type="url" name="" id="producto-imagen">
+                </div>
+                <div class="producto-input">
+                    <label for="producto-categoria">Categoría</label>
+                    <input type="text" name="categoria" id="producto-categoria">
+                </div>
+                <div class="producto-input">
+                    <label for="producto-nombre">Nombre del producto</label>
+                    <input type="text" name="producto-nombre" id="producto-nombre">
+                </div>
+                <div class="producto-input">
+                    <label for="producto-precio">Precio del producto</label>
+                    <input type="number" name="precio" id="producto-precio">
+                </div>
+                <div class="producto-input">
+                    <label for="producto-descripcion">Descripción del producto</label>
+                    <input type="text" name="descripcion" id="producto-descripcion">
+                </div>
+                <button type="submit" class="boton__agregar boton" >Agregar producto</button>
+            </form>
+        </section>
+        <section class="contacto container">
+            <div class="contacto-navegacion">
+                <div class="contacto-enlaces">
+                    <img class="contacto__logo" src="img/Logo.svg" alt="Logo de Alura Geek">
+                    <ul class="navegacion">
+                        <li class="enlaces">Quienes Somos</li>
+                        <li class="enlaces">Política de privacidad</li>
+                        <li class="enlaces">Programa de fidelidad</li>
+                        <li class="enlaces">Nuestras tiendas</li>
+                        <li class="enlaces">Quiero ser franquiciado</li>
+                        <li class="enlaces">Anúncie aquí</li>
+                    </ul>
+                </div>
+                <form action="" method="post" class="formulario__contacto">
+                    <p>Hable con nosotros</p>
+                    <div class="user__name">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="user_name"/>
+                    </div>
+                    <div class="textarea">
+                        <label for="msg"></label>
+                        <textarea id="msg" name="user_message" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <button class="boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Lilia Salazar</p>
+        <p>2023</p>
+    </footer>
+</body>
+</html>
