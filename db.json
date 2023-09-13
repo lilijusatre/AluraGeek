@@ -28,7 +28,8 @@
    ],
      "usuario": {
         "id": 13,
-        "nome": "Laura González",
-        "perfil": "Administración"
+        "nombre": "Laura González",
+        "email": "lauraG@alura.com",
+        "password": "Sandia1246"
      }
 }

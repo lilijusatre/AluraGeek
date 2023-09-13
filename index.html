@@ -41,7 +41,7 @@
         <section class="galeria container">
             <div class="galeria__titulo">
                 <h2>Star Wars</h2>
-                <p><a href="/productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
+                <p><a href="/todos-los-productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
             </div>
             
             <div class="galeria__productos">
@@ -84,7 +84,7 @@
             </div>
             <div class="galeria__titulo" id="consolas">
                 <h2>Consolas</h2>
-                <p> <a href="/productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
+                <p> <a href="/todos-los-productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
             </div>
             <div class="galeria__productos">
                 <div class="galeria__producto">
@@ -126,7 +126,7 @@
             </div>
             <div class="galeria__titulo">
                 <h2>Diversos</h2>
-                <p><a href="/productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
+                <p><a href="/todos-los-productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
             </div>
             <div class="galeria__productos">
                 <div class="galeria__producto">
@@ -180,17 +180,19 @@
                         <li class="enlaces">Anúncie aquí</li>
                     </ul>
                 </div>
-                <form action="" method="post" class="formulario__contacto">
+                <form action="" method="post" class="formulario__contacto " >
                     <p>Hable con nosotros</p>
                     <div class="user__name">
                         <label for="name">Nombre</label>
-                        <input type="text" id="name" name="user_name"/>
+                        <input type="text" id="name" name="user_name" maxlength="40"/>
                     </div>
                     <div class="textarea">
                         <label for="msg"></label>
-                        <textarea id="msg" name="user_message" placeholder="Escribe tu mensaje"></textarea>
+                        <textarea id="msg" name="user_message" placeholder="Escribe tu mensaje" maxlength="120">
+                        </textarea>
+                        <span id="contador" class="hidden">0/120</span> <span id="mensaje-limite" class="hidden">Máximo 120 caracteres</span>
                     </div>
-                    <button class="boton">Enviar mensaje</button>
+                    <button type="submit" class="boton" id="enviar_mensaje">Enviar mensaje</button>
                 </form>
             </div>
         </section>
@@ -199,5 +201,6 @@
             <p>2023</p>
         </footer>
     </main>
+    <script type="module" src="/controllers/contacto.js"></script>
 </body>
 </html>

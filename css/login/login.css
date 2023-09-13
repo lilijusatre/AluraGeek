@@ -40,6 +40,16 @@ body{
     width: 100%;
     font-size: 18px;
 }
+.hidden{
+    display: none;
+}
+.shown{
+    font-family: var(--raleway);
+    font-size: 12px;
+    color: brown;
+    text-align: right;
+    display:block;
+}
 @media screen and (max-width: 768px) {
     .boton__login{
         width: 50%;

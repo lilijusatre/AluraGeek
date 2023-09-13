@@ -24,11 +24,11 @@
     <section class="login">
         <form action="post" class="login__form" data-form>
             <p>Iniciar Sesión</p>
-            <input type="email" name="correo" id="iniciar__correo" placeholder="Escriba su correo electrónico" required
-            data-email>
-            <input type="password" name="contraseña" id="iniciar__contraseña" placeholder="Escriba su contraseña" required
-            data-password>
-            <button class="boton boton__login" type="submit">Entrar</button>
+            <input type="email" name="correo" id="iniciar__correo" placeholder="Escriba su correo electrónico" 
+            data-email required>
+            <input type="password" name="contraseña" id="iniciar__contraseña" placeholder="Escriba su contraseña" required>
+            <span id="alert_login" class="hidden"></span>
+            <button class="boton boton__login" type="submit" id="submit">Entrar</button>
         </form>
     </section>
     <section class="contacto container">
@@ -44,17 +44,19 @@
                     <li class="enlaces">Anúncie aquí</li>
                 </ul>
             </div>
-            <form action="" method="post" class="formulario__contacto">
+            <form action="" method="post" class="formulario__contacto " >
                 <p>Hable con nosotros</p>
                 <div class="user__name">
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" name="user_name"/>
+                    <input type="text" id="name" name="user_name" maxlength="40"/>
                 </div>
                 <div class="textarea">
                     <label for="msg"></label>
-                    <textarea id="msg" name="user_message" placeholder="Escribe tu mensaje"></textarea>
+                    <textarea id="msg" name="user_message" placeholder="Escribe tu mensaje" maxlength="120">
+                    </textarea>
+                    <span id="contador" class="hidden">0/120</span> <span id="mensaje-limite" class="hidden">Máximo 120 caracteres</span>
                 </div>
-                <button class="boton">Enviar mensaje</button>
+                <button type="submit" class="boton" id="enviar_mensaje">Enviar mensaje</button>
             </form>
         </div>
     </section>
@@ -62,6 +64,7 @@
         <p>Desarrollado por Lilia Salazar</p>
         <p>2023</p>
     </footer>
-    <script type="module" src="../controllers/registro.controller.js"></script>
+    <script type="module" src="/controllers/contacto.js"></script>
+    <script type="module" src="/controllers/login.js"></script>
 </body>
 </html>
