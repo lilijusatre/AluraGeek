@@ -1,4 +1,4 @@
-const EMAIL = 'lili@alura.com';
+const EMAIL = 'usuario@correo.com';
 const PASSWORD = 'Sandia1234';
 const botonLogin = document.querySelector("#submit");
 

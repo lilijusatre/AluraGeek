@@ -90,6 +90,12 @@ textarea::placeholder{
     text-align: right;
     display:block;
 }
+.boton:hover {
+    background-color: var(--preto50);
+}
+.boton:active {
+    color: blue;
+}
 @media screen and (max-width: 1024px) and (min-width: 769px) {
     .contacto{
         padding-top: 30px;

@@ -27,9 +27,14 @@
         <section class="nuevo-producto container">
             <form action="post" class="producto__form">
                 <p>Agregar nuevo producto</p>
-                <div class="producto-input">
+                <div class="producto-img">
                     <label for="producto-imagen">URL de la imagen</label>
-                    <input type="url" name="" id="producto-imagen">
+                    <input type="file" id="fileInput" accept="image/*">
+                    <div id="dropZone" class="drop-zone">
+                        Arrastra y suelta una imagen aquí o haz clic para seleccionar una imagen.
+                        <img id="previewImage" src="#" alt="Vista Previa">
+                      </div>
+                    <!-- <input type="url" name="" id="producto-imagen"> -->
                 </div>
                 <div class="producto-input">
                     <label for="producto-categoria">Categoría</label>
@@ -47,7 +52,7 @@
                     <label for="producto-descripcion">Descripción del producto</label>
                     <input type="text" name="descripcion" id="producto-descripcion">
                 </div>
-                <button type="submit" class="boton__agregar boton" >Agregar producto</button>
+                <button type="submit" class="boton__agregar boton" id="submitButton">Agregar producto</button>
             </form>
         </section>
         <section class="contacto container">
@@ -85,5 +90,6 @@
         <p>2023</p>
     </footer>
     <script type="module" src="/controllers/contacto.js"></script>
+    <script type="module" src="/controllers/agregar-producto.js"></script>
 </body>
 </html>

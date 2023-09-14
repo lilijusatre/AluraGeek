@@ -8,8 +8,7 @@
 .producto__form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 300px;
+    align-items: center;
 }
 .producto__form > p{
     font-family: var(--raleway);
@@ -46,7 +45,27 @@
     font-size: 16px;
     font-weight: 300;
 }
+.producto-img {
+    display: flex;
+    width: 559px;
+    padding-top: 15px;
 
+}
+.drop-zone {
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .drop-zone img {
+    display: none;
+  }
+  
+  .drop-zone.drag-over {
+    border-color: blue;
+  }
 @media screen and (max-width: 768px) {
     .head{
         padding: 20px 30px 15px 30px;

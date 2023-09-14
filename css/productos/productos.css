@@ -55,7 +55,12 @@
     text-decoration: none;
     color: var(--blue);
 }
-
+.agregar-productos:hover {
+    background-color: var(--preto50);
+}
+.agregar-productos:active {
+    color: blue;
+}
 
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
