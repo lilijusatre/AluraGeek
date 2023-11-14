@@ -1,35 +1,37 @@
 {
-    "proyectos": [
+    "producto": [
         {
-            "id": 1,
-            "nombre": "Alura Tracker 3.0"  },
+            "nombre": "Alura",
+            "imageUrl": "",
+            "price": "1",
+            "id": 1
+
+        },
         {
-            "id": 2,
-            "nombre": "ByteBank 2.0"
+            "nombre": "Alura One",
+            "imageUrl": "",
+            "price": "100",
+            "id": 2
+        },
+        {
+            "nombre": "Alura Two",
+            "imageUrl": "",
+            "price": "10",
+            "id": 3
+        },
+        {
+            "nombre": "Alura Three",
+            "imageUrl": "",
+            "price": "330",
+            "id": 4
+        },
+        {
+            "nombre": "Alura Four",
+            "imageUrl": "",
+            "price": "1322",
+            "id": 5
         }
-   ],
-    "tareas": [
-        {
-            "id": 1,
-            "descripcion": "Configuración del ambiente",
-            "proyecto": {
-            "id": 1,
-            "nombre": "Alura Tracker 3.0"
-         }
-        },
-        {
-        "descripcion": "Defactorización vuex 4",
-        "proyecto": {
-        "id": 1,
-        "nombre": "Alura Tracker 3.0"
-        },
-        "id": 2
-      }
-   ],
-     "usuario": {
-        "id": 13,
-        "nombre": "Laura González",
-        "email": "lauraG@alura.com",
-        "password": "Sandia1246"
-     }
+        
+
+    ]
 }
