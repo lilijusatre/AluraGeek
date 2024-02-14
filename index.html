@@ -1,206 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alura Geek</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="css/bases.css" rel="stylesheet"/>
-    <link href="css/head.css" rel="stylesheet"/>
-    <link href="css/main/promocional.css" rel="stylesheet"/>
-    <link href="css/productos/galeria.productos.css" rel="stylesheet"/>
-    <link href="css/main/contacto.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="css/bases.css" rel="stylesheet" />
+    <link href="css/head.css" rel="stylesheet" />
+    <link href="css/main/promocional.css" rel="stylesheet" />
+    <link href="css/productos/galeria.productos.css" rel="stylesheet" />
+    <link href="css/main/contacto.css" rel="stylesheet" />
     <!-- CDN library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="head">
-        <a href="/index.html"> <img class="head__logo" src="img/Logo.svg" alt="Logo de Alura Geek"> </a>
-        <div class="head__buscador" >
-            <input class="head__buscador__input" type="search" placeholder="¿Qué deseas buscar?">
-            <!-- <img src="img/icons/search.svg" alt="Icono de busqueda"> -->
-            <svg id="mi-svg" class="head__buscador__icono" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z" fill="#A2A2A2"/>
-            </svg>
-        </div>
-        
-        <button class="button login"> <a href="/login.html">Login </a></button>
+      <a href="/index.html">
+        <img class="head__logo" src="img/Logo.svg" alt="Logo de Alura Geek" />
+      </a>
+      <div class="head__buscador">
+        <input
+          class="head__buscador__input"
+          type="search"
+          placeholder="¿Qué deseas buscar?"
+        />
+        <!-- <img src="img/icons/search.svg" alt="Icono de busqueda"> -->
+        <svg
+          id="mi-svg"
+          class="head__buscador__icono"
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.5 14.5H14.71L14.43 14.23C15.63 12.83 16.25 10.92 15.91 8.89C15.44 6.11 13.12 3.89 10.32 3.55C6.09001 3.03 2.53002 6.59 3.05002 10.82C3.39002 13.62 5.61002 15.94 8.39002 16.41C10.42 16.75 12.33 16.13 13.73 14.93L14 15.21V16L18.25 20.25C18.66 20.66 19.33 20.66 19.74 20.25C20.15 19.84 20.15 19.17 19.74 18.76L15.5 14.5ZM9.50002 14.5C7.01002 14.5 5.00002 12.49 5.00002 10C5.00002 7.51 7.01002 5.5 9.50002 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.50002 14.5Z"
+            fill="#A2A2A2"
+          />
+        </svg>
+      </div>
+
+      <button class="button login"><a href="/login.html">Login </a></button>
     </header>
-    
+
     <main>
-        <section class="promo container">
-            <h1 class="promo__titulo">Julio Promocional</h1>
-            <p class="promo__texto">Productos seleccionados con 33% de descuento</p>
-            <button class="promo__boton boton"><a href="#consolas">Ver Consolas </a></button>
-        </section>
-        
-        <section class="galeria container">
-            <div class="galeria__titulo">
-                <h2>Star Wars</h2>
-                <p><a href="/todos-los-productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
+      <section class="promo container">
+        <h1 class="promo__titulo">Julio Promocional</h1>
+        <p class="promo__texto">Productos seleccionados con 33% de descuento</p>
+        <button class="promo__boton boton">
+          <a href="#consolas">Ver Consolas </a>
+        </button>
+      </section>
+
+      <section class="galeria container">
+        <div class="galeria__titulo">
+          <h2>Star Wars</h2>
+          <p>
+            <a href="/todos-los-productos.html"
+              >Ver todo <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </p>
+        </div>
+
+        <div class="galeria__productos">
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+        </div>
+        <div class="galeria__titulo" id="consolas">
+          <h2>Consolas</h2>
+          <p>
+            <a href="/todos-los-productos.html"
+              >Ver todo <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </p>
+        </div>
+        <div class="galeria__productos">
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+        </div>
+        <div class="galeria__titulo">
+          <h2>Diversos</h2>
+          <p>
+            <a href="/todos-los-productos.html"
+              >Ver todo <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </p>
+        </div>
+        <div class="galeria__productos">
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+          <div class="galeria__producto">
+            <img src="./img/productos/XYZ.png" alt="taza blanca" />
+            <p class="galeria__productos-descripcion">Producto XYZ</p>
+            <h4 class="galeria_productos-precio">$60,00</h4>
+            <a href="" class="ver-producto">Ver producto</a>
+          </div>
+        </div>
+      </section>
+      <section class="contacto container">
+        <div class="contacto-navegacion">
+          <div class="contacto-enlaces">
+            <a href="/index.html">
+              <img
+                class="contacto__logo"
+                src="img/Logo.svg"
+                alt="Logo de Alura Geek"
+              />
+            </a>
+            <ul class="navegacion">
+              <li class="enlaces">Quienes Somos</li>
+              <li class="enlaces">Política de privacidad</li>
+              <li class="enlaces">Programa de fidelidad</li>
+              <li class="enlaces">Nuestras tiendas</li>
+              <li class="enlaces">Quiero ser franquiciado</li>
+              <li class="enlaces">Anúncie aquí</li>
+            </ul>
+          </div>
+          <form action="" method="post" class="formulario__contacto">
+            <p>Hable con nosotros</p>
+            <div class="user__name">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="user_name" maxlength="40" />
             </div>
-            
-            <div class="galeria__productos">
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
+            <div class="textarea">
+              <label for="msg"></label>
+              <textarea
+                id="msg"
+                name="user_message"
+                placeholder="Escribe tu mensaje"
+                maxlength="120"
+              >
+              </textarea>
+              <span id="contador" class="hidden">0/120</span>
+              <span id="mensaje-limite" class="hidden"
+                >Máximo 120 caracteres</span
+              >
             </div>
-            <div class="galeria__titulo" id="consolas">
-                <h2>Consolas</h2>
-                <p> <a href="/todos-los-productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
-            </div>
-            <div class="galeria__productos">
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-            </div>
-            <div class="galeria__titulo">
-                <h2>Diversos</h2>
-                <p><a href="/todos-los-productos.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a></p>
-            </div>
-            <div class="galeria__productos">
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-                <div class="galeria__producto">
-                    <img src="/img/productos/XYZ.png" alt="taza blanca">
-                    <p class="galeria__productos-descripcion"> Producto XYZ </p>
-                    <h4 class="galeria_productos-precio"> $60,00</h4>
-                    <a href="" class="ver-producto">Ver producto</a>
-                </div>
-            </div>
-        </section>
-        <section class="contacto container">
-            <div class="contacto-navegacion">
-                <div class="contacto-enlaces">
-                    <a href="/index.html"> <img class="contacto__logo" src="img/Logo.svg" alt="Logo de Alura Geek"> </a>
-                    <ul class="navegacion">
-                        <li class="enlaces">Quienes Somos</li>
-                        <li class="enlaces">Política de privacidad</li>
-                        <li class="enlaces">Programa de fidelidad</li>
-                        <li class="enlaces">Nuestras tiendas</li>
-                        <li class="enlaces">Quiero ser franquiciado</li>
-                        <li class="enlaces">Anúncie aquí</li>
-                    </ul>
-                </div>
-                <form action="" method="post" class="formulario__contacto " >
-                    <p>Hable con nosotros</p>
-                    <div class="user__name">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="user_name" maxlength="40"/>
-                    </div>
-                    <div class="textarea">
-                        <label for="msg"></label>
-                        <textarea id="msg" name="user_message" placeholder="Escribe tu mensaje" maxlength="120">
-                        </textarea>
-                        <span id="contador" class="hidden">0/120</span> <span id="mensaje-limite" class="hidden">Máximo 120 caracteres</span>
-                    </div>
-                    <button type="submit" class="boton" id="enviar_mensaje">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
-        <footer>
-            <p>Desarrollado por Lilia Salazar</p>
-            <p>2023</p>
-        </footer>
+            <button type="submit" class="boton" id="enviar_mensaje">
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <p>Desarrollado por Lilia Salazar</p>
+        <p>2023</p>
+      </footer>
     </main>
     <script type="module" src="/controllers/contacto.js"></script>
-</body>
+  </body>
 </html>
